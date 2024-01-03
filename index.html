@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/style.css"> 
+    <link rel="shortcut icon" href="./src/assets/background/smilingsun.png" type="image/x-icon">
+    <title>SunSeeker</title>
+  </head>
+  <body>
+    <nav class="blah">
+      <div class="nav-div">
+        <div class="location">
+          <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+          </svg></i>
+          <div class="top-current-location">Bahawalpur, Pakistan</div>
+        </div>
+        <form class="search-city">
+          <input
+            type="search"
+            name="city"
+            id="city"
+            class="search"
+            placeholder="Search City"
+          />
+          <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg></button>
+        </form>
+      </div>
+      <div class="switch-div">
+      <div class="toggle-button-coverr">
+        <div id="button-3" class="button r">
+          <input class="checkbox" type="checkbox">
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <main class="alsomain">
+      <div class="weather-current">
+        <img
+          class="weather-icon"
+          src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+          alt=""
+        />
+        <div class="temp tempp">28&deg; C</div>
+        <div class="condition">Cloudy</div>
+        <hr />
+        <div class="location">
+          <i class="bi bi-geo-alt"></i>
+          <span class="location-span">Seattle, Australia</span>
+        </div>
+        <div class="date datee">
+          <i class="bi bi-calendar-week"></i>
+          <div>22 Nov 2023, <span class="time">08:52</span></div>
+        </div>
+      </div>
+      <div class="additional-info">
+        <div class="heading">Today's Highlight</div>
+        <div class="content">
+          <div>
+            <div class="title">Feels like</div>
+            <div class="info">
+              <span class="feels-like span">84</span> <span class="feels-like-symbol symbol"><i class="bi bi-thermometer-half"></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="title">Humidity</div>
+            <div class="info">
+              <span class="humidity span">84</span> <span class="humidity-symbol symbol"><i class="bi bi-droplet"></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="title">UV index</div>
+            <div class="info">
+              <span class="uv-index span">84</span> <span class="uv-index-symbol symbol"><i class="bi bi-sun"></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="title">Wind (kph)</div>
+            <div class="info">
+              <span class="wind span">84</span> <span class="wind-symbol symbol"><i class="bi bi-wind"></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="title">Wind direction</div>
+            <div class="info">
+              <span class="wind-direction span">84</span> <span class="wind-direction-symbol symbol"><i class="bi bi-compass"></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="title ">Wind Degree</div>
+            <div class="info">
+              <span class="wind-degree span">84</span> <span class="wind-degree-symbol symbol"><i class="bi bi-tropical-storm"></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="title">Precip(mm)</div>
+            <div class="info">
+              <span class="precip span">84</span> <span class="precip-symbol symbol"><i class="bi bi-moisture"></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="title">Gust (kph)</div>
+            <div class="info">
+              <span class="gust span">84</span> <span class="gust-symbol symbol"><i class="bi bi-cloud-haze2"></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="title ">Visibility (km)</div>
+            <div class="info">
+              <span class="visibility span">84</span> <span class="visibility-symbol symbol"><i class="bi bi-eye"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="forecast">
+        <div class="heading ">4 days Forecast</div>
+        <div class="content">
+          <div>
+            <img class="first-day"
+              src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+              alt=""
+              class="weather-icon"
+            />
+            <div class="temp">
+              <div class="max first-day-max">+29/</div>
+              <div class="low first-day-min">+23</div>
+            </div>
+            <div class="date first-day-date">23 Nov</div>
+            <div class="day first-day-weekday">Thursday</div>
+          </div>
+          <div>
+            <img class="second-day"
+              src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+              alt=""
+              class="weather-icon"
+            />
+            <div class="temp">
+              <div class="max second-day-max">+29/</div>
+              <div class="low second-day-min">+23</div>
+            </div>
+            <div class="date second-day-date">23 Nov</div>
+            <div class="day second-day-weekday">Thursday</div>
+          </div>
+          <div>
+            <img class="third-day"
+              src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+              alt=""
+              class="weather-icon"
+            />
+            <div class="temp">
+              <div class="max third-day-max">+29/</div>
+              <div class="low third-day-min">+23</div>
+            </div>
+            <div class="date third-day-date">23 Nov</div>
+            <div class="day third-day-weekday">Thursday</div>
+          </div>
+          <div>
+            <img class="fourth-day"
+              src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+              alt=""
+              class="weather-icon"
+            />
+            <div class="temp">
+              <div class="max fourth-day-max">+29/</div>
+              <div class="low fourth-day-min">+23</div>
+            </div>
+            <div class="date fourth-day-date">23 Nov</div>
+            <div class="day fourth-day-weekday">Thursday</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="other-large-cities">
+        <div class="heading">Other large cities</div>
+        <div class="content">
+          <div>
+            <div>
+              <div>
+                <div class="country first-country">US</div>
+                <div class="city first-city">California</div>
+              </div>
+              <img class="first-city-icon"
+                src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                alt=""
+                class="weather-icon"
+              />
+            </div>
+            <div>
+              <div class="condition first-city-condition">Mostly sunny</div>
+              <div class="temp first-city-temp">29&deg; C</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div class="country second-country">US</div>
+                <div class="city second-city">California</div>
+              </div>
+              <img class="second-city-icon"
+                src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                alt=""
+                class="weather-icon"
+              />
+            </div>
+            <div>
+              <div class="condition second-city-condition">Mostly sunny</div>
+              <div class="temp second-city-temp">29&deg; C</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div class="country third-country">US</div>
+                <div class="city third-city">California</div>
+              </div>
+              <img class="third-city-icon"
+                src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                alt=""
+                class="weather-icon"
+              />
+            </div>
+            <div>
+              <div class="condition third-city-condition">Mostly sunny</div>
+              <div class="temp third-city-temp">29&deg; C</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div class="country fourth-country">US</div>
+                <div class="city fourth-city">California</div>
+              </div>
+              <img class="fourth-city-icon"
+                src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                alt=""
+                class="weather-icon"
+              />
+            </div>
+            <div>
+              <div class="condition fourth-city-condition">Mostly sunny</div>
+              <div class="temp fourth-city-temp">29&deg; C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./dist/bundle.js"></script>
+</html>

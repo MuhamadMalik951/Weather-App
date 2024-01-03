@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-color: #110f0f;
+  --font-color: #fff;
+  --g-bd-radius: 20px;
+  --g-padding: 20px;
+  --s-bg-color: #2b2121;
+  --t-bg-color: #23253a8e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,html {
+  padding: 0;
+  margin: 0;
+}
+.additional-info {
+  background-color: var(--s-bg-color);
+  border-radius: var(--g-bd-radius);
+  display: flex;
+  flex-direction: column;
+  padding: var(--g-padding);
+}
+
+.additional-info > .content {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.additional-info > .content > div {
+  background-color: var(--t-bg-color);
+  border-radius: var(--g-bd-radius);
+  display: flex;
+  flex: 1 1 260px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--g-padding);
+}
+
+.additional-info .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.additional-info .info i {
+  font-size: 1.2em;
+}
+
+.additional-info .info > div > span:first-child {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.bi-search {
+  color: var(--font-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: 'Nunito', sans-serif;
+  /* margin: 0; */
+  padding: var(--g-padding);
+}
+
+dialog {
+  background-color: var(--bg-color);
+  border: 3px solid var(--s-bg-color);
+  border-radius: var(--g-bd-radius);
+  color: var(--font-color);
+  padding: var(--g-padding);
+}
+
+dialog > .close-modal {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+  width: clamp(300px, 50%, 550px);
+}
+
+form > button {
+  background-color: var(--s-bg-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  width: 45px;
+}
+
+.heading {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+hr {
+  opacity: 0.3;
+  width: 100%;
+}
+
+input#city {
+  background-color: var(--s-bg-color);
+  border: none;
+  border-radius: var(--g-bd-radius);
+  color: var(--font-color);
+  outline: none;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.location {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+main {
+  display: grid;
+  column-gap: 30px;
+  grid-template: 1.2fr 1fr / 1fr 2.3fr;
+  padding: 20px 0;
+  row-gap: 40px;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.weather-current {
+  background-color: var(--s-bg-color);
+  border-radius: var(--g-bd-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  padding: var(--g-padding);
+}
+
+.weather-current .date {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.weather-current .temp {
+  font-size: 3.4em;
+  font-weight: 500;
+}
+
+.weather-current .time {
+  font-weight: 700;
+}
+
+.weather-icon {
+  align-self: center;
+  width: 50%;
+}
+
+.forecast,
+.other-large-cities {
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast > .content {
+  background-color: var(--s-bg-color);
+  border-radius: var(--g-bd-radius);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--g-padding);
+}
+
+.forecast > .content > div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast .low {
+  opacity: 0.7;
+}
+
+.forecast .max {
+  font-size: 1.4em;
+}
+
+.forecast .temp {
+  display: flex;
+  gap: 3px;
+}
+
+.forecast .weather-icon {
+  transform: translateX(-10px);
+  width: 20%;
+}
+
+.loading-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loading {
+  width: 70%;
+  height: 50px;
+  border-radius: var(--g-bd-radius);
+  background-color: var(--t-bg-color);
+  animation: scale-up-down 1s infinite;
+}
+
+@keyframes scale-up-down {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.loading:nth-child(2) {
+  /* transform: translateX(50%); */
+  align-self: center;
+}
+
+.loading:last-child {
+  /* transform: translateX(100%); */
+  align-self: flex-end;
+}
+
+.other-large-cities {
+  font-size: 0.9em;
+}
+
+.other-large-cities > .content {
+  background-color: var(--s-bg-color);
+  border-radius: var(--g-bd-radius);
+  display: grid;
+  flex: 1;
+  gap: 20px;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  padding: var(--g-padding);
+}
+
+.other-large-cities > .content > div {
+  background-color: var(--t-bg-color);
+  border-radius: var(--g-bd-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--g-padding);
+}
+
+.other-large-cities > .content > div > div {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-large-cities .country {
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+
+.other-large-cities .temp {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.other-large-cities .weather-icon {
+  transform: translateX(5px);
+  width: 10%;
+}
+
+/* Overriding some dropdown menu rules */
+.lin-ddm-header {
+  background-color: var(--s-bg-color);
+  border-radius: var(--g-bd-radius);
+  gap: 10px;
+  padding: 20px;
+}
+
+.lin-ddm-header img {
+  filter: brightness(0) invert(1);
+}
+
+.lin-ddm-drop-down > .lin-ddm-list-items {
+  background-color: var(--s-bg-color) !important;
+}
+
+.lin-ddm-drop-down > .lin-ddm-list-items > li:hover {
+  background-color: var(--bg-color) !important;
+}
+
+.lin-ddm-drop-down > .lin-ddm-list-items > :not(li:last-child) {
+  border-color: var(--t-bg-color) !important;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 768px) {
+  main {
+    grid-template: repeat(2, 1fr) 0.7fr / repeat(2, 1fr);
+  }
+
+  .additional-info {
+    grid-area: 1 / 2 / span 2 / span 1;
+  }
+
+  .other-large-cities {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 840px) {
+  .additional-info > .content > div {
+    flex: 1 1 160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    gap: 5px;
+  }
+
+  main {
+    grid-template: auto / 1fr;
+  }
+
+  nav .location {
+    display: none;
+  }
+
+  .other-large-cities > .content {
+    grid-template: auto / 1fr;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  nav .weather-icon {
+    align-self: flex-start;
+    width: 30%;
+  }
+
+  .forecast .weather-icon {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .additional-info {
+    display: none;
+  }
+}
